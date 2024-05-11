@@ -1,0 +1,40 @@
+.SectionTitle_SectionTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.SectionTitle_text {
+    color: #000000;
+    font-weight: bold;
+    border-bottom: 2px solid #cccccc;
+    font-size: 40px;
+    padding-bottom: 5px;
+}
+.AboutMe_basic-infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+.AboutMe_basic-info {
+    display: flex;
+    align-items: center; /* 중앙 정렬 */
+    padding: 10px;
+    border: 1px solid #cccccc;
+    height: 90px;
+}
+.AboutMe_field {
+    margin-top: 5px;
+    width: 100%;
+}
+.AboutMe_field-label {
+    font-weight: bold;
+}
+.AboutMe_field-value {
+    color: #555;
+    margin-top: 4px;
+}
+.AboutMe_icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px; /* 아이콘과 텍스트 사이 간격 */
+}
