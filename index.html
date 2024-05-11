@@ -37,6 +37,41 @@
             text-align: center;
         }
 
+
+        .skills_container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 한 줄에 두 개의 카드 */
+            gap: 20px; /* 카드 사이의 간격 */
+            padding: 20px;
+        }
+
+        .skill_card {
+            background-color: white; /* 카드의 배경색 */
+            border-radius: 10px; /* 둥근 모서리 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+            padding: 20px;
+            text-align: left; /* 텍스트 왼쪽 정렬 */
+        }
+
+        .skill_card h3 {
+            color: #333;
+        }
+
+        .skill_card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill_card li {
+            margin-bottom: 10px;
+            align-items: center;
+            display: flex;
+        }
+
+        .skill_card img {
+            width: 30px; /* 아이콘 크기 조정 */
+            margin-right: 10px; /* 아이콘과 텍스트 사이 간격 */
+        }
     </style>
 </head>
 <body>
