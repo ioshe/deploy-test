@@ -1,5 +1,5 @@
 .myself_backimg {
-    background-image: url('./data/iwant.png'); /* 이미지 경로는 실제 환경에 맞게 조정하세요 */
+    background-image: url('../data/iwant.png'); /* 이미지 경로는 실제 환경에 맞게 조정하세요 */
     background-size: cover;
     background-position: center;
     height: 600px;
