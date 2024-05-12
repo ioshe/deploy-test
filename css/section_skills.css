@@ -1,9 +1,12 @@
       
         .skills_container {
             display: grid;
-            grid-template-columns: repeat(3, minmax(400px, 1fr)); /* 최소 너비 300px, 최대 1fr */
-            /* grid-template-columns: repeat(2, 1fr); 한 줄에 두 개의 카드 */
-            gap: 20px; /* 카드 사이의 간격 */
+            /* grid-template-columns: repeat(3, minmax(400px, 1fr)); 최소 너비 300px, 최대 1fr */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px; /* 카드 간의 갭을 50px로 설정 */
+            justify-content: center; /* 카드를 중앙에 위치시킴 */
+            max-width: 1200px; /* 컨테이너의 최대 너비를 줄임 */
+            margin: 0 auto; /* 중앙 정렬 */
             padding: 20px;
         }
 
