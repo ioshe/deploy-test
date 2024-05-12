@@ -19,20 +19,21 @@
 }
 .AboutMe_basic-infos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 20px;
     text-align: center;
 }
 .AboutMe_basic-info {
     display: flex;
-    flex-direction: row; /* 요소들을 수직으로 쌓음 */
+    flex-direction: row; /* 요소들을 수평으로 쌓음 */
     align-items: center; /* 내용을 중앙에 정렬 */
     padding: 20px;
     border: 2px solid #aaaaaa;
     border-radius: 10px; /* 둥근 테두리를 만듭니다 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 끄림자를 추가합니다 */
     height: auto; /* 높이를 내용에 맞게 조정 */
-    min-width: 500px;
+    min-width: 100%;
+    max-width: 600px; /* 최대 너비 설정 */
 }
 .AboutMe_field {
     margin-top: 5px;
