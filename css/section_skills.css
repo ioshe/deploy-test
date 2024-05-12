@@ -1,4 +1,8 @@
-
+.SectionTitle_text {
+    border-bottom: 2px solid #cccccc;
+    font-size: 40px;
+    display: inline; /* 또는 inline-block을 사용합니다 */
+}
 .skills_container {
     display: grid;
     /* grid-template-columns: repeat(3, minmax(400px, 1fr)); 최소 너비 300px, 최대 1fr */
