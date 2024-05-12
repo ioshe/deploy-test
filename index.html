@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/about-me.css">
     <link rel="stylesheet" href="./css/section_skills.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/archiving.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +31,11 @@
             .skill_card li, .AboutMe_field {
                 font-size: 16px; /* 모바일 화면에 맞게 폰트 크기 조정 */
             }
+            .skills_container {
+                /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+                gap: 10px; /* 카드 간의 갭을 50px로 설정 */
+                grid-template-columns: repeat(2, 1fr);
+            }
             .navbar-collapse {
                 flex-grow: 0; /* 모바일에서 네비게이션 바 아이템들이 불필요하게 확장되는 것을 방지 */
             }
@@ -49,12 +55,15 @@
                 /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
                 grid-template-columns: repeat(2, 1fr);
             }
+            .AboutMe_field-value {
+                font-size: 20px;
+            }
         }
 
         @media (min-width: 1024px) { /* 대형 화면에서 적용할 스타일 */
             .AboutMe_basic-info {
                 min-width: 500px; /* 컴퓨터 화면에서는 최대 너비를 800px로 설정 */
-                max-height: 100px;
+                max-height: 140px;
             }
             .AboutMe_basic-infos {
                 gap: 40px;
@@ -62,6 +71,9 @@
             .skills_container {
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
                 /* grid-template-columns: repeat(3, 1fr); */
+            }
+            .AboutMe_field-value {
+                font-size: 32px;
             }
         }
 
@@ -96,7 +108,9 @@
             
             text-align: center;
         }
-  
+        
+
+        
     </style>
 </head>
 <body>
@@ -235,10 +249,46 @@
             </div>
         </section>
 
-        <section id="section_archiving">
-            <div>
-                <h2>section_archiving</h2>
-            </div>            
+        <section id="section_archiving" class="section_archiving">
+            <div class="SectionTitle_SectionTitle">
+                <div class="SectionTitle_text">ARCHIVING</div>
+            </div>
+            <div class="skills_container">
+                <div class="skill_card" onclick="location.href='https://github.com/ioshe';">
+                    <h3>GitHub</h3>
+                    <div class="Archiving_img-wrapper">
+                        <img class="Archiving_img" src="./images/archiving/github-logo.png" alt="GitHub Logo">
+                    </div>
+                    <div class="Archiving_url">
+                        <a href="https://github.com/ioshe">github.com/ioshe</a>
+                    </div>
+                    <div class="Archiving_description">
+                        <p><strong>소스 코드 저장소</strong>입니다.</p>
+                        <ul>
+                            <li>프로젝트,프로그램,간단한 기록들의 저장소 </li>
+                            <li>우리 FISA에서 연습한 소스 코드</li>
+                            <li>공식문서를 보고 따라한 소스 코드</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill_card" onclick="location.href='https://historyover.com';">
+                    <h3>Blog</h3>
+                    <div class="Archiving_img-wrapper">
+                        <img class="Archiving_img" src="./images/archiving/historyover-logo.png" alt="Blog Logo">
+                    </div>
+                    <div class="Archiving_url">
+                        <a href="https://historyover.com">historyover.com</a>
+                    </div>
+                    <div class="Archiving_description">
+                        <p><strong>공부 및 지식 공유 목적의 블로그</strong>입니다.</p>
+                        <ul>
+                            <li>알고리즘 풀이법 공유</li>
+                            <li>웹 개발자의 길을 걸으며 공부한 웹 관련 지식 정리</li>
+                            <li>지식 공유</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="section_projects">
@@ -246,12 +296,6 @@
                 <h2>section_projects</h2>
             </div>            
         </section>
-
-        <!-- <section id="github" class="mt-5">
-            <h2>Github</h2>
-            <p><a href="https://github.com/ioshe" target="_blank">Github 프로필 방문하기</a></p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </section> -->
     </main>
     
     <footer class="mt-5 p-4 bg-light text-center">

@@ -1,0 +1,41 @@
+.section_archiving {
+    background-color: #2C3E50; /* 배경색 변경 */
+    color: #fff; /* 텍스트 색상 변경 */
+    padding: 40px 0; /* 패딩 조정 */
+}
+
+.section_archiving .SectionTitle_text {
+    color: #ffffff; /* 섹션 제목 색상 */
+}
+
+.section_archiving .skill_card {
+    background-color: #ffffff; /* 카드 배경색 */
+    color: #333; /* 카드 텍스트 색상 */
+    max-width: 600px; /* 카드 최대 너비 조정 */
+    margin: 20px auto; /* 중앙 정렬 및 마진 조정 */
+    padding: 20px; /* 패딩 조정 */
+    cursor: pointer;
+}
+
+.section_archiving .skill_card:hover {
+    background-color: #f9f9f9; /* 배경색 변경 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+    transform: scale(1.03); /* 약간 확대 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.Archiving_description {
+    font-size: 24px; /* 설명 텍스트 폰트 크기 */
+    margin-top: 10px; /* 설명 텍스트 상단 여백 */
+    display: contents; /* 요소들을 수평으로 배치하기 위해 Flexbox를 사용합니다 */
+    align-items: center; /* 수직 정렬을 중앙에 맞춥니다 */
+}
+
+.section_archiving a {
+    color: #3498db; /* 링크 색상 변경 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.section_archiving a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 추가 */
+}
