@@ -92,13 +92,6 @@
             margin: 0 auto;
             /* padding-top: 50px; */
         }
-        .myself_backimg {
-            background-image: url('./data/iwant.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 600px;
-            opacity: 0.5; /* 50% 투명도 */
-        }
         main section {
             padding: 20px;
             margin-bottom: 20px;
@@ -120,8 +113,31 @@
             text-align: center;
         }
         
-
-        
+        .myself_backimg {
+            background-image: url('./data/iwant.png'); /* 이미지 경로는 실제 환경에 맞게 조정하세요 */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            text-align: center;
+            position: relative;
+        }
+        .myself-title {
+            padding-top: 150px;
+            font-size: 60px;
+            margin: 0;
+            color: aliceblue;
+            
+        }
+        .divider {
+            width: 50%;
+            height: 2px;
+            background-color: #1530ac;
+            margin: 10px auto;
+        }
+        .myself-description {
+            font-size: 30px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -145,7 +161,19 @@
     <main>
         <section id="myself">
             <div class="myself_backimg">
-                <p> 되는건가</p>
+                <!-- 내용을 포함할 새로운 div를 추가 -->
+                <div class="myself_content korean">
+                    <div class="myself-title">
+                        <!-- <span style="-webkit-text-stroke: 2px black;">- 이민수 -<br>웹 개발자 포트폴리오</span> -->
+                        - 이민수 -<br>웹 개발자 포트폴리오
+                    </div>
+                    <hr class="divider">
+                    <div class="myself-description">
+                        안녕하세요.<br>
+                        공부가 취미인 풀 스택 웹 개발자입니다.<br>
+                        매우 꼼꼼한 성격, 그리고 공부를 밥 먹듯이 하는 습관이 저의 장점입니다.
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -258,6 +286,14 @@
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section id="section_cetificate" class="section_cetificate">
+            <div class="SectionTitle_SectionTitle">
+                <div class="SectionTitle_text">Cetificate</div>
+            </div>
+            <div class="cetificate_container">
+                
         </section>
 
         <section id="section_archiving" class="section_archiving">
