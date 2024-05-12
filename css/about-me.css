@@ -9,18 +9,30 @@
     font-size: 40px;
     padding-bottom: 5px;
 }
+.AboutMe_content__nt2Em {
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 컨테이너를 중앙에 위치시킴 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .AboutMe_basic-infos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 40px;
     text-align: center;
 }
 .AboutMe_basic-info {
     display: flex;
-    align-items: center; /* 중앙 정렬 */
-    padding: 10px;
-    border: 1px solid #cccccc;
-    height: 90px;
+    flex-direction: column; /* 요소들을 수직으로 쌓음 */
+    align-items: center; /* 내용을 중앙에 정렬 */
+    padding: 20px;
+    border: 2px solid #aaaaaa;
+    border-radius: 10px; /* 둥근 테두리를 만듭니다 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 끄림자를 추가합니다 */
+    height: auto; /* 높이를 내용에 맞게 조정 */
+    min-width: 500px;
 }
 .AboutMe_field {
     margin-top: 5px;
@@ -28,6 +40,7 @@
 }
 .AboutMe_field-label {
     font-weight: bold;
+    margin-bottom: 4px; /* 라벨과 값 사이 간격 추가 */
 }
 .AboutMe_field-value {
     color: #555;
