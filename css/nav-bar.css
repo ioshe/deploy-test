@@ -1,0 +1,42 @@
+    /* 네비게이션 바 스타일 */
+    .navbar {
+    background-color: #f8f9fa; /* 밝은 회색 톤 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 1rem; /* 상단 바 패딩 조정 */
+}
+
+.container-fluid {
+    max-width: 1800px;
+}
+
+/* 네비게이션 항목을 오른쪽에 정렬 */
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* 네비게이션 링크 스타일 */
+.nav-link {
+    color: #333; /* 어두운 회색 톤의 글씨 */
+    font-weight: 500;
+    margin-right: 10px; /* 링크 간 간격 줄임 */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* 호버 시 색상 변경 */
+    text-decoration: none;
+}
+
+/* 브랜드 로고 스타일 */
+.navbar-brand {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem; /* 로고 폰트 크기 조정 */
+}
+
+.navbar-brand:hover {
+    color: #0056b3;
+}
+
+.navbar-nav li {
+    font-size: 20px;
+}
