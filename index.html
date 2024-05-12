@@ -10,15 +10,23 @@
     <link rel="stylesheet" href="./css/section_skills.css">
     <link rel="stylesheet" href="./css/nav-bar.css">
     <link rel="stylesheet" href="./css/archiving.css">
+    <link rel="stylesheet" href="./css/project.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: "Poetsen One", sans-serif;
             font-weight: 400;
+            font-style: normal;
+        }
+
+        .korean {
+            font-family: "Do Hyeon", sans-serif;
+            font-weight: 500;
             font-style: normal;
         }
 
@@ -112,67 +120,6 @@
             text-align: center;
         }
         
-        /* Project Section Styles */
-        .section_projects .SectionTitle_text {
-            color: #ffffff; /* 섹션 제목 색상 */
-        }
-
-        .project-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .project-card {
-            background-color: #f5f5f5;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 20px;
-            padding: 20px;
-            width: 100%;
-            max-width: 600px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgba(0,0,0,0.2);
-        }
-
-        .project-title {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .project-period {
-            font-size: 18px;
-            color: #666;
-        }
-
-        .project-description {
-            font-size: 16px;
-            margin-top: 10px;
-        }
-
-        .project-technology {
-            font-size: 14px;
-            color: #333;
-            background-color: #e0e0e0;
-            border-radius: 4px;
-            padding: 5px 10px;
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        .project-link {
-            color: #3498db;
-            text-decoration: none;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
-        }
 
         
     </style>
@@ -213,7 +160,7 @@
                     <img class="AboutMe_icon" src="./images/about-me/person-fill.svg" alt="Person Icon">
                     <div class="AboutMe_field">
                         <div class="AboutMe_field-label">이름</div>
-                        <div class="AboutMe_field-value">이민수</div>
+                        <div class="AboutMe_field-value korean">이민수</div>
                     </div>
                   </div>
                   <div class="AboutMe_basic-info">
@@ -227,7 +174,7 @@
                     <img class="AboutMe_icon" src="./images/about-me/geo-alt-fill.svg" alt="Location Icon">
                     <div class="AboutMe_field">
                       <div class="AboutMe_field-label">주소지</div>
-                      <div class="AboutMe_field-value">인천 광역시 미추홀구</div>
+                      <div class="AboutMe_field-value korean">인천 광역시 미추홀구</div>
                     </div>
                   </div>
                   <div class="AboutMe_basic-info">
@@ -248,7 +195,7 @@
                     <img class="AboutMe_icon" src="./images/about-me/pencil-fill.svg" alt="Education Icon">
                     <div class="AboutMe_field">
                       <div class="AboutMe_field-label">학력</div>
-                      <div class="AboutMe_field-value">학점은행제<br>(컴퓨터공학부)</div>
+                      <div class="AboutMe_field-value korean">학점은행제<br>(컴퓨터공학부)</div>
                     </div>
                   </div>
                 </div>
@@ -359,36 +306,82 @@
             <div class="SectionTitle_SectionTitle">
                 <div class="SectionTitle_text">PROJECTS</div>
             </div>
-            <div class="project-container">
+            <div class="project-container" onclick="location.href='https://github.com/JunGyuRyu/BespokeCreditCard';">
                 <div class="project-card">
                     <div class="project-title">AI를 활용한 초개인화 카드 발급 서비스</div>
                     <div class="project-period">2024.03~2024.05 - 팀 프로젝트</div>
                     <div class="project-images">
-                        <img>
+                        <img class="project_img" src="./images/projects/title-1.jpg" alt="bespoke-title-page">
+                        <img class="project_img" src="./images/projects/archi-1.jpg" alt="bespoke-archi-page">
                     </div>
                     <div class="project-description">
-                        타임박스 플래너를 앱으로 활용하기 위한 PWA 기반의 웹사이트입니다. 시중의 앱들은 필요 이상으로 복잡하여 타임박스 플래너 본연의 기능만을 담도록 직접 개발하였습니다.
+                        <p>프로젝트의 주된 목적은 개인화된 신용카드 추천 서비스를 제공하는 것이었습니다. <br>이를 위해, AI 기술을 활용한 군집 기반 추천 시스템과 초개인화된 카드 디자인 생성 기능을 개발하였습니다. <br>특히, AWS 환경에서의 배포와 CI/CD 구축, 그리고 Spring Boot와 Spring Security를 사용한 보안 기능 구현에 집중했습니다.</p>
+                    </div>
+                    <div class="project-roles">
+                        <h4>주 역할</h4>
+                        <ol>
+                            <li>AWS를 통한 서버 인프라 구축</li>
+                            <li>Jenkins, Docker 를 활용한 자동화 CI/CD 배포</li>
+                            <li>Git으로 프로젝트 기능별 분산형 버전관리 시스템 기획</li>
+                            <li>사용자, 시스템 로그 수집(ELK, Prometheus, Grafana)</li>
+                            <li>노션 기반 협업 워크스페이스 구축</li>
+                            <li>JWT를 이용한 인증 시스템 구현</li>
+                        </ol>
                     </div>
                     <div class="project-technologies">
-                        <span class="project-technology">Next.js</span>
-                        <span class="project-technology">Supabase</span>
-                        <span class="project-technology">Sass</span>
+                        <p> frontend : 
+                            <span class="project-technology">bootstrap</span>
+                            <span class="project-technology">JSP</span>
+                        </p>
+                        <p> backend : 
+                            <span class="project-technology">Springboot</span>
+                            <span class="project-technology">SpringSecurity</span>
+                            <span class="project-technology">Mysql</span>
+                            <span class="project-technology">flask</span>
+                            <span class="project-technology">ELK</span> 
+                        </p>
+                        <p> deploy : 
+                            <span class="project-technology">AWS</span>
+                            <span class="project-technology">Jenkins</span>
+                            <span class="project-technology">Docker</span>
+                        </p>
+                        <a href="https://github.com/JunGyuRyu/BespokeCreditCard" class="project-link">프로젝트 보기</a>
                     </div>
-                    <a href="https://timebox-planner.co.kr" class="project-link">프로젝트 보기</a>
                 </div>
                 
                 <div class="project-card">
-                    <div class="project-title">메이플 경매장 알리미</div>
-                    <div class="project-period">2023.08 - 2023.09 - 팀 프로젝트</div>
+                    <div class="project-title">칭찬게시판</div>
+                    <div class="project-period">2024.02 - 팀 프로젝트</div>
+                    <div class="project-images">
+                        <img class="project_img" src="./images/projects/title-2.png" alt="bespoke-title-page">
+                        <img class="project_img" src="./images/projects/archi-2.png" alt="bespoke-archi-page">
+                    </div>
                     <div class="project-description">
-                        메이플스토리의 아이템이 원하는 조건으로 경매장에 올라왔을 때 알림을 받아보기 위한 웹사이트입니다. 메이플스토리를 좋아하는 한 친구의 아이디어에 착안하여 개발하였습니다.
+                        <p>이 프로젝트는 사용자 간에 서로 칭찬을 공유하고 긍정적인 상호작용을 장려하기 위한 온라인 칭찬 게시판 시스템을 개발하는 것이 목표였습니다. <br>이 시스템은 Spring Boot를 기반으로 하여 구축되었으며, AWS 클라우드 서비스를 이용하여 배포되었습니다. <br>게시판은 사용자가 서로를 칭찬하는 글을 작성하고, 이를 통해 포인트를 얻을 수 있는 기능을 포함하고 있습니다.<br> 사용자는 자신의 글이나 다른 사람의 글에 좋아요를 누르고, 이에 따라 포인트가 적립되는 시스템이 마련되어 있습니다.</p>
+                    </div>
+                    <div class="project-roles">
+                        <h4>주 역할</h4>
+                        <ol>
+                            <li>JPA를 이용한 데이터베이스 설계 및 연동</li>
+                            <li>세션 관리를 통한 포인트 로직 개발</li>
+                        </ol>
                     </div>
                     <div class="project-technologies">
-                        <span class="project-technology">React 18</span>
-                        <span class="project-technology">Next.js 13</span>
-                        <span class="project-technology">React-Query</span>
+                        <p> frontend : 
+                            <span class="project-technology">bootstrap</span>
+                            <span class="project-technology">JSP</span>
+                        </p>
+                        <p> backend : 
+                            <span class="project-technology">Springboot</span>
+                            <span class="project-technology">Mysql</span>
+                        </p>
+                        <p> deploy : 
+                            <span class="project-technology">AWS</span>
+                            <span class="project-technology">Jenkins</span>
+                            <span class="project-technology">Docker</span>
+                        </p>
+                        <a href="https://github.com/JunGyuRyu/BespokeCreditCard" class="project-link">프로젝트 보기</a>
                     </div>
-                    <a href="https://maplealimi.com" class="project-link">프로젝트 보기</a>
                 </div>
             </div>
         </section>
