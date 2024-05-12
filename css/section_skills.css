@@ -5,7 +5,7 @@
 }
 .skills_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     /* grid-template-columns: repeat(3, 1fr); */
     gap: 100px; /* 카드 간의 갭을 50px로 설정 */
     justify-content: center; /* 카드를 중앙에 위치시킴 */
@@ -24,7 +24,7 @@
     flex-direction: column; /* 항목들을 수직으로 쌓음 */
     align-items: center; /* 수직 정렬을 중앙으로 설정 */
     max-width: 100%; /* 컨테이너를 넘지 않도록 100%로 설정 */
-    min-width: 400px; /* 너무 작아지지 않도록 최소 너비 설정 */
+    min-width: 300px; /* 너무 작아지지 않도록 최소 너비 설정 */
     margin: auto; /* 카드를 컨테이너 중앙에 위치시킴 */
 }
 
