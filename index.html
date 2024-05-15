@@ -33,10 +33,20 @@
         }
 
         @media (max-width: 767px) {
+            .myself-description, .section_skills .skill_card li, .section_certificate .skill_card li{
+                font-size: 20px;
+            }
+            .section_skills .skill_card img {
+                height: auto;
+                min-height: 50px;
+                width: auto;
+                max-width: 100%; /* 이미지의 최대 너비를 부모 요소의 너비에 맞게 설정합니다. */
+                max-height: 80px;
+            }
             .section_skills .skill_card {
                 min-width: 70%; /* 너무 작아지지 않도록 최소 너비 설정 */
-                max-width: 90%;
-                padding: 10px;
+                max-width: 100%;
+                padding: 5px;
             }
             .skill_card li, .AboutMe_field {
                 font-size: 16px; /* 모바일 화면에 맞게 폰트 크기 조정 */
