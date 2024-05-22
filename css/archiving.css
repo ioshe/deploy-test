@@ -14,7 +14,6 @@
     max-width: 600px; /* 카드 최대 너비 조정 */
     margin: 20px auto; /* 중앙 정렬 및 마진 조정 */
     padding: 20px; /* 패딩 조정 */
-    cursor: pointer;
 }
 
 .section_archiving .skill_card:hover {
